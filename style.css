@@ -51,7 +51,7 @@ ul
 }
 .slider-content
 {
-    display: flex;
+    
     max-width: 100%;
 }
 .content p{
@@ -265,18 +265,17 @@ ul
     }
     .icons
     {
-     gap: 20px;
+        flex-wrap: wrap !important;
+        gap: 20px;
     }
     .accordion .contentBx.active .content
     {
         height: 120px;
     }
+}
    
 @media (min-width:300px) and (max-width:481px)  {
-    .slider-content
-    {
-     flex-direction: column !important;
-    }
+   
     .img
     {
      margin-top: 20px;
@@ -284,14 +283,16 @@ ul
     }
     .icons
     {
-        margin-top: 50px;
-     gap: 20px;
+        flex-wrap: wrap;
+        gap: 5px;
+        
     }
     .img img {
         width: 200px;
     }
     .row
     {
+     
         flex-wrap: wrap;
     }
     .fs-5
@@ -301,6 +302,10 @@ ul
     .accordion .contentBx.active .content
     {
         height: 220px;
+    }
+    .slider-content
+    {
+     flex-direction: column !important;
     }
     
 }
